@@ -15,6 +15,7 @@ gem 'redcarpet', '~> 3.3.3'
 gem 'coffee-script-source', '1.8.0'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1'
+gem 'will_paginate', '~> 3.0.7'
 
 group :development, :test do
   gem 'byebug'
