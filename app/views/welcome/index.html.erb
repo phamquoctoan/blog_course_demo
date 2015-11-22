@@ -8,21 +8,17 @@
 	<div class="col-2 homepage_content">
 		<h2>Stuff I've Written</h2>
 		<hr>
-
 		<% @posts.each do |post| %>
-			<h3><a href="#"><%= link_to post.title %></a></h3>
+			<h3><a href="#"><%= link_to post.title, post %></a></h3>
 			<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
 		<% end %>
 	</div>
 	<div class="col-3 homepage_content">
 	<h2>Stuff I've Built</h2>
 		<hr>
-		<h3><a href="#">Unicasts</a></h3>
-		<p class="date">Friday April 10th</p>
-		<h3><a href="#">The PQT Community</a></h3>
-		<p class="date">Friday April 10th</p>
-		<h3><a href="#">Another</a></h3>
-		<p class="date">Friday April 10th</p>
-		
+		<% @projects.each do |project| %>
+			<h3><a href="#"><%= link_to project.title, project %></a></h3>
+			<p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+		<% end %>
 	</div>
 </div>
