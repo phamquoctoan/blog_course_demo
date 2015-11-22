@@ -166,7 +166,7 @@ DEPENDENCIES
   friendly_id (~> 5.1)
   jbuilder (~> 2.0)
   jquery-rails
-  mail_form (~> 1.5, >= 1.5.1)
+  mail_form (~> 1.5.1)
   pg
   pygments.rb (~> 0.6.3)
   rails (= 4.2.5)
